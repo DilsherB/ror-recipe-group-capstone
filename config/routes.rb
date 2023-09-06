@@ -6,7 +6,8 @@ Rails.application.routes.draw do
       resources :recipe_foods
     end
     # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  
+    # Define a route for the "Public Recipes" page
+    get 'recipes/index', to: 'recipes#index', as: 'recipes_index'
     # Defines the root path route ("/")
     root "users#index"
   end

@@ -1,10 +1,6 @@
 class RecipeFood < ApplicationRecord
-  belongs_to :food
-  belongs_to :recipe
+  belongs_to :recipe, class_name: 'Recipe', foreign_key: 'recipe_id'
+  belongs_to :food, class_name: 'Food', foreign_key: 'food_id'
 
-  after_initialize :set_default_quantity
-
-  def set_default_quantity
-    self.quantity ||= 1
-  end
+  validates :quantity, presence: true
 end
