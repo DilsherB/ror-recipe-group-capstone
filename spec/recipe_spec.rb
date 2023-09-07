@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Recipe, type: :model do
   before :each do
-    @recipe = Recipe.create(name: 'Biryani', preparation_time: '15 Min', cooking_time: '1 Hour', description: 'Rice with chicken')
+    @recipe = Recipe.create(name: 'Biryani', preparation_time: '15 Min', cooking_time: '1 Hour',
+                            description: 'Rice with chicken')
   end
 
   context 'Recipe validations' do

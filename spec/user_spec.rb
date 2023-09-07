@@ -2,7 +2,7 @@
 require 'rails_helper'
 
 RSpec.feature 'User Registration', type: :feature do
-  before :each do 
+  before :each do
     @user = User.new(name: 'Ali', email: 'ali@gamail.com', password: 'ali', password_confirmation: 'ali')
   end
 
