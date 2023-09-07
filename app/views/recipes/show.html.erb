@@ -43,7 +43,7 @@
          <% @recipe.recipes_foods.each do |fd|%>
          <tr>
            <td><%= fd.food.name%></th>
-           <td><%= fd.quantity%> <%= fd.food.measurement_unit  %></td>
+           <td><%= fd.quantity%></td>
            <td>$<%= (fd.quantity.to_f * fd.food.price.to_f).round(2) %></td>
            <td class="mb-3 col-sm-3">
            <% if can? :destroy, @recipe %>
