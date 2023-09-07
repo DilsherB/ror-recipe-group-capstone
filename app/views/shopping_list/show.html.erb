@@ -21,7 +21,7 @@
       <tr>
         <td><%= fd.food.name%></th>
         <td><%= fd.quantity%> <%= fd.food.measurement_unit  %></td>
-        <td>$<%= fd.quantity* fd.food.price %></td>
+        <td>$<%= (fd.quantity.to_f * fd.food.price.to_f).round(2) %></td>
       </tr>
 
       </tbody>
