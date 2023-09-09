@@ -89,11 +89,4 @@ test:
 #
 production:
   <<: *default
-<<<<<<< HEAD
   url: <%= ENV['DATABASE_URL'] %>
-=======
-  url: <%= ENV["DATABASE_URL"] %>
-  database: ror_recipe_group_capstone_production
-  username: ror_recipe_group_capstone
-  password: <%= ENV["ROR_RECIPE_GROUP_CAPSTONE_DATABASE_PASSWORD"] %>
->>>>>>> 30b7a39d09194b0df3a3be7b1ff36be722e993e6
